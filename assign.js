@@ -67,7 +67,7 @@ function seerToMon(seer){   //declearing Function//
 
     }
     //  realtime output With console.log //
-    var totalsaled=totalSales(1,0,1);
+    var totalsaled=totalSales(1,1,1);
     console.log(totalsaled);
 
     // END OF PROBLEM -2// 
@@ -76,6 +76,18 @@ function seerToMon(seer){   //declearing Function//
 
      function deliveryCost(Quantity) //declearing function//
     {
+
+
+        // Error Message here  //
+
+        if(typeof Quantity!='number'){
+
+            return 'Error! Invalid Input Type '
+        }
+        if(Quantity<1){
+
+            return 'Error! Invalid Input Type '
+        }
             //  declearing variabes needed//
         let chargeFor100=100;
         let chargeFor200=80;
@@ -127,6 +139,12 @@ function seerToMon(seer){   //declearing Function//
 
     //   declearing function //
 function  perfectFriend(array){
+
+    // Error message HEre //
+     if(typeof array !="object"){
+
+        return 'Please Enter An Array '
+     }
     var friend= 0;
 
     //  starts the loop //
@@ -141,7 +159,7 @@ function  perfectFriend(array){
     return friend;
   }
         //    live output with parameters //
-        var arr = perfectFriend( [ 'fdgdfgdfg', 'gdfgf', 'gdfgdfhawsdgd', 'gdf', 'gdfhdfhjurvweadsd' ]);
+        var arr = perfectFriend( [ 'fdgdfgdfg', 'ths','arg', 'gdfgf', 'gdfgdfhawsdgd', 'gdf', 'gdfhdfhjurvweadsd' ]);
         console.log(arr);
 
         // end of problem 4//
