@@ -128,7 +128,7 @@ function seerToMon(seer){   //declearing Function//
 
 }
     //   live output with parameters// 
-    let totalcharge=deliveryCost(203);
+    let totalcharge=deliveryCost(205);
     console.log(totalcharge);
 
     // END PROBLEM-3// 
